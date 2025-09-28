@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["pl"] = map[string]struct{}{
+func loadPl() map[string]struct{} {
+	return map[string]struct{}{
 		"a":            {},
 		"aby":          {},
 		"ach":          {},

@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["el"] = map[string]struct{}{
+func loadEl() map[string]struct{} {
+	return map[string]struct{}{
 		"αλλα":     {},
 		"αν":       {},
 		"αντι":     {},

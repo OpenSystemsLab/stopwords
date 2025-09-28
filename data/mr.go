@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["mr"] = map[string]struct{}{
+func loadMr() map[string]struct{} {
+	return map[string]struct{}{
 		"अधिक":     {},
 		"अनेक":     {},
 		"अशी":      {},

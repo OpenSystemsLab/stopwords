@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["ko"] = map[string]struct{}{
+func loadKo() map[string]struct{} {
+	return map[string]struct{}{
 		"!":           {},
 		"$":           {},
 		"%":           {},

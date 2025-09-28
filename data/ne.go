@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["ne"] = map[string]struct{}{
+func loadNe() map[string]struct{} {
+	return map[string]struct{}{
 		"अक्सर":       {},
 		"अगाडी":       {},
 		"अझै":         {},

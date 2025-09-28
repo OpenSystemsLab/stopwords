@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["eo"] = map[string]struct{}{
+func loadEo() map[string]struct{} {
+	return map[string]struct{}{
 		"adiaŭ":     {},
 		"ajn":       {},
 		"al":        {},

@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["fa"] = map[string]struct{}{
+func loadFa() map[string]struct{} {
+	return map[string]struct{}{
 		"!":            {},
 		",":            {},
 		".":            {},

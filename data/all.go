@@ -2,4 +2,141 @@
 
 package data
 
-var Languages = map[string]map[string]struct{}{}
+import "fmt"
+
+// LoadLanguage loads a specific language's stopwords
+func LoadLanguage(lang string) (map[string]struct{}, error) {
+	switch lang {
+	case "af":
+		return loadAf(), nil
+	case "ar":
+		return loadAr(), nil
+	case "az":
+		return loadAz(), nil
+	case "bg":
+		return loadBg(), nil
+	case "bn":
+		return loadBn(), nil
+	case "br":
+		return loadBr(), nil
+	case "ca":
+		return loadCa(), nil
+	case "cs":
+		return loadCs(), nil
+	case "da":
+		return loadDa(), nil
+	case "de":
+		return loadDe(), nil
+	case "el":
+		return loadEl(), nil
+	case "en":
+		return loadEn(), nil
+	case "eo":
+		return loadEo(), nil
+	case "es":
+		return loadEs(), nil
+	case "et":
+		return loadEt(), nil
+	case "eu":
+		return loadEu(), nil
+	case "fa":
+		return loadFa(), nil
+	case "fi":
+		return loadFi(), nil
+	case "fr":
+		return loadFr(), nil
+	case "ga":
+		return loadGa(), nil
+	case "gl":
+		return loadGl(), nil
+	case "gu":
+		return loadGu(), nil
+	case "ha":
+		return loadHa(), nil
+	case "he":
+		return loadHe(), nil
+	case "hi":
+		return loadHi(), nil
+	case "hr":
+		return loadHr(), nil
+	case "hu":
+		return loadHu(), nil
+	case "hy":
+		return loadHy(), nil
+	case "id":
+		return loadId(), nil
+	case "it":
+		return loadIt(), nil
+	case "ja":
+		return loadJa(), nil
+	case "kk":
+		return loadKk(), nil
+	case "ko":
+		return loadKo(), nil
+	case "ku":
+		return loadKu(), nil
+	case "la":
+		return loadLa(), nil
+	case "lt":
+		return loadLt(), nil
+	case "lv":
+		return loadLv(), nil
+	case "mr":
+		return loadMr(), nil
+	case "ms":
+		return loadMs(), nil
+	case "ne":
+		return loadNe(), nil
+	case "nl":
+		return loadNl(), nil
+	case "no":
+		return loadNo(), nil
+	case "pl":
+		return loadPl(), nil
+	case "pt":
+		return loadPt(), nil
+	case "ro":
+		return loadRo(), nil
+	case "ru":
+		return loadRu(), nil
+	case "sk":
+		return loadSk(), nil
+	case "sl":
+		return loadSl(), nil
+	case "so":
+		return loadSo(), nil
+	case "st":
+		return loadSt(), nil
+	case "sv":
+		return loadSv(), nil
+	case "sw":
+		return loadSw(), nil
+	case "tg":
+		return loadTg(), nil
+	case "th":
+		return loadTh(), nil
+	case "tl":
+		return loadTl(), nil
+	case "tr":
+		return loadTr(), nil
+	case "uk":
+		return loadUk(), nil
+	case "ur":
+		return loadUr(), nil
+	case "vi":
+		return loadVi(), nil
+	case "yo":
+		return loadYo(), nil
+	case "zh":
+		return loadZh(), nil
+	case "zu":
+		return loadZu(), nil
+	default:
+		return nil, fmt.Errorf("unsupported language: %s", lang)
+	}
+}
+
+// GetSupportedLanguages returns a list of all supported languages
+func GetSupportedLanguages() []string {
+	return []string{"af", "ar", "az", "bg", "bn", "br", "ca", "cs", "da", "de", "el", "en", "eo", "es", "et", "eu", "fa", "fi", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "it", "ja", "kk", "ko", "ku", "la", "lt", "lv", "mr", "ms", "ne", "nl", "no", "pl", "pt", "ro", "ru", "sk", "sl", "so", "st", "sv", "sw", "tg", "th", "tl", "tr", "uk", "ur", "vi", "yo", "zh", "zu"}
+}

@@ -2,8 +2,8 @@
 
 package data
 
-func init() {
-	Languages["gu"] = map[string]struct{}{
+func loadGu() map[string]struct{} {
+	return map[string]struct{}{
 		"અંગે":     {},
 		"અંદર":     {},
 		"અથવા":     {},
