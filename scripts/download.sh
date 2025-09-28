@@ -4,7 +4,7 @@ set -e
 
 WORK_DIR=./build
 
-rm -r $WORK_DIR
+rm -rf $WORK_DIR
 
 mkdir -p $WORK_DIR
 

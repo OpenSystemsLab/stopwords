@@ -1,4 +1,4 @@
-module github.com/golang-nlp/stopwords
+module github.com/OpenSystemsLab/stopwords
 
 go 1.23.3
 
