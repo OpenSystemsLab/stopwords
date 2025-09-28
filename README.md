@@ -1,13 +1,13 @@
-# Stopwords for Golang ![Last release](https://img.shields.io/github/release/golang-nlp/stopwords.svg)
+# Stopwords for Golang ![Last release](https://img.shields.io/github/release/OpenSystemsLab/stopwords.svg)
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/golang-nlp/stopwords)](https://goreportcard.com/report/github.com/golang-nlp/stopwords)
+[![Go Report Card](https://goreportcard.com/badge/github.com/OpenSystemsLab/stopwords)](https://goreportcard.com/report/github.com/OpenSystemsLab/stopwords)
 
 | Branch | Status                                                                                                                                                | Coverage                                                                                                                                         |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| master | [![Go](https://github.com/golang-nlp/stopwords/actions/workflows/go.yml/badge.svg)](https://github.com/golang-nlp/stopwords/actions/workflows/go.yml) | [![Coveralls](https://img.shields.io/coveralls/golang-nlp/stopwords/master.svg)](https://coveralls.io/github/golang-nlp/stopwords?branch=master) |
+| master | [![Go](https://github.com/OpenSystemsLab/stopwords/actions/workflows/go.yml/badge.svg)](https://github.com/OpenSystemsLab/stopwords/actions/workflows/go.yml) | [![Coveralls](https://img.shields.io/coveralls/OpenSystemsLab/stopwords/master.svg)](https://coveralls.io/github/OpenSystemsLab/stopwords?branch=master) |
 
 ```sh
-go get -u github.com/golang-nlp/stopwords
+go get -u github.com/OpenSystemsLab/stopwords
 ```
 
 ## Quick Start
@@ -16,7 +16,7 @@ go get -u github.com/golang-nlp/stopwords
 import (
     "fmt"
 
-    "github.com/golang-nlp/stopwords"
+    "github.com/OpenSystemsLab/stopwords"
 )
 
 func main() {
@@ -41,7 +41,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/golang-nlp/stopwords"
+    "github.com/OpenSystemsLab/stopwords"
 )
 
 func main() {
